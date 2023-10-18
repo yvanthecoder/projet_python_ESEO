@@ -24,3 +24,6 @@ def PieceEnDiagonale(plateau,piecesposees, piece, couleur,coordonnee_X,coordonne
                     if plateau[coordonnee_Y+i-1][coordonnee_X+j-1] == couleur+"#" or plateau[coordonnee_Y+i+1][coordonnee_X+j-1] == couleur+"#" or plateau[coordonnee_Y+i-1][coordonnee_X+j+1] == couleur+"#" or plateau[coordonnee_Y+i+1][coordonnee_X+j+1] == couleur+"#" :       
                         return True
         return False
+
+def rien():
+    return None
