@@ -1,5 +1,5 @@
-    def creerppieces():
-    Listepieces = [ [["-" for j in range(5)] for i in range(5)] for i in range(21)]
+def creerppieces():
+    Listepieces = [ [[" " for j in range(5)] for i in range(5)] for i in range(21)]
 
     #carré
     Listepieces[0][0][0] = "#"
@@ -71,7 +71,7 @@
     Listepieces[13][1][1] = "#"
     Listepieces[13][2][1] = "#"
     Listepieces[13][2][0] = "#"
-    #4+1
+    #4+1 
     Listepieces[14][0][0] = "#"
     Listepieces[14][1][0] = "#"
     Listepieces[14][1][1] = "#"
@@ -103,7 +103,7 @@
     Listepieces[18][1][2] = "#"
     Listepieces[18][2][2] = "#"
 
-    #petit T +1  
+    #petit T +1   
     Listepieces[19][0][0] = "#"
     Listepieces[19][1][0] = "#"
     Listepieces[19][1][1] = "#"
@@ -119,13 +119,12 @@
 
 
  
-# Java2Blog
+
 def affichagepiecesrestantes(Liste):
     for i in range(len(Liste)):
         print(f"{i+1}/")
         for j in range(len(Liste[i])):
             print(" ".join(Liste[i][j]))
         print(" \n")
-   
-effaceEcran()
-affichagepiecesrestantes(creerppieces())
+
+
