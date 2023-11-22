@@ -1,4 +1,3 @@
-for i in range(-1,2):
-    for j in range(-1,2):
-        if abs(j) != abs(i):
-            print(i,j)
+L = [1,2,3]
+L1 = [4,5,6]
+print(L1+L)

@@ -6,7 +6,7 @@ from gameplay import *
 #test Dédié à la création de cases interdites et autorisées
 #test de camouflage de ces dernières lors de l'impression
 
-#creation c
+#creation du joueur
 joueurtest = joueur()
 joueurtest.couleur = "\033[1;36m"
 #creation du plateau

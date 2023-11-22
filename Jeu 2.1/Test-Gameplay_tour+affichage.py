@@ -7,6 +7,13 @@ def NouvellesCasesPosées(ListeTotale,pieceposée):
     for i in range(len(pieceposée)):
         ListeTotale.append(pieceposée[i])
 
+
+#  "\033[1;36m" = Bleu
+#  "\033[1;31m" = rouge
+#  "\033[1;32m" = vert
+#  "\033[1;33m" = jaune
+#  "\033[1;37m" = blanc
+
 def jeu(grille,nombre_de_joueurs):
     # création des joueurs selon le nombre indiqué
     couleurs = ["\033[1;36m","\033[1;31m","\033[1;32m","\033[1;33m"]
@@ -36,8 +43,12 @@ def jeu(grille,nombre_de_joueurs):
         print(f"\033[1;37m")
         affichagepiecesrestantes(joueuractuel.pieces)
         
-        input("x")
         #Fin du tour :
         tour+=1
         if len(joueuractuel.pieces) == 0:
             fin = True
+            
+
+
+plandeTest = creerMatrice()
+jeu(plandeTest,2)
